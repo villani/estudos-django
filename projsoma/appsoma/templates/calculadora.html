@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma valores</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form method="get">
+        {% csrf_token %}
+        <p>
+            <label for="num1">Número 1:</label><br>
+            <input type="text" name="num1" class="form-control">
+        </p>
+        <p>
+            <label for="num2">Número 2:</label><br>
+            <input type="text" name="num2" class="form-control">
+        </p>
+        <p>
+            <button type="submit">Somar</button>
+        </p>
+        <p>
+            <label for="result">Resultado:</label><br>
+            <input type="text" value="{{resultado}}" class="form-control">
+        </p>
+    </form>
+</body>
+</html>
