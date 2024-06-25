@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+def definir_notas(request):
+    return render(request, 'media.html')
+
 def media_final(request):
     media = ''
     try:
@@ -12,4 +15,5 @@ def media_final(request):
     except:
         media = 'Preencha as notas para calcular a média...'
 
-    return render(request, 'media.html', {'media': media})
+    return render(request, 'resultado.html', {'media': media})
+

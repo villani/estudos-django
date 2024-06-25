@@ -20,5 +20,6 @@ from appmedia import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.media_final, name='media_final'),
+    path('', views.definir_notas, name='definir_notas'),
+    path('resultado', views.media_final, name='media_final'),
 ]

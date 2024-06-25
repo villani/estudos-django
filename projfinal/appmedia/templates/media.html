@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Calcula média de quatro notas</h1>
-    <form method="get">
+    <form method="get" action="/resultado">
         {% csrf_token %}
         <p>
             <label for="nota1">Nota 1:</label><br>
@@ -27,10 +27,6 @@
         </p>
         <p>
             <button type="submit">Calcular média</button>
-        </p>
-        <p>
-            <label for="media">Média:</label><br>
-            <input type="text" name="media" value="{{media}}" class="form-control">
         </p>
     </form>
 </body>
