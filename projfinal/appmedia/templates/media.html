@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula média de quatro notas</title>
+</head>
+<body>
+    <h1>Calcula média de quatro notas</h1>
+    <form method="get">
+        {% csrf_token %}
+        <p>
+            <label for="nota1">Nota 1:</label><br>
+            <input type="text" name="nota1" class="form-control">
+        </p>
+        <p>
+            <label for="nota2">Nota 2:</label><br>
+            <input type="text" name="nota2" class="form-control">
+        </p>
+        <p>
+            <label for="nota3">Nota 3:</label><br>
+            <input type="text" name="nota3" class="form-control">
+        </p>
+        <p>
+            <label for="nota4">Nota 4:</label><br>
+            <input type="text" name="nota4" class="form-control">
+        </p>
+        <p>
+            <button type="submit">Calcular média</button>
+        </p>
+        <p>
+            <label for="media">Média:</label><br>
+            <input type="text" name="media" value="{{media}}" class="form-control">
+        </p>
+    </form>
+</body>
+</html>
